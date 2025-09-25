@@ -26,8 +26,17 @@ export default function MainPage() {
         }} size="medium" variant="contained">
         drag and drop
       </Button>
-      <Button size="medium" variant="contained">
+      <Button size="medium" variant="contained" onClick={()=>{
+                  navigate(routes.zustand.path);
+
+      }}>
         zoostand mini project
+      </Button>
+            <Button size="medium" variant="contained" onClick={()=>{
+                  navigate(routes.zustand2.path);
+
+      }}>
+        zoostand mini project2
       </Button>
       <Button
         onClick={() => {

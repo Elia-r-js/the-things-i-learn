@@ -1,27 +1,34 @@
-
-
 import MainPage from "../main-page";
 import yup from "../mini project/yup.jscoockies/yup";
 import Callender from "../mini project/callender/Callender";
 import DragandDrop from "../mini project/dragand drop/dran-and-drop";
-
-
+import Bears from "../mini project/zoostand/Bears";
+import Todolist from "../mini project/zoostand/Todolist";
 
 export const routes = {
-    MainPage: {
-        path: '/',
-        Component:MainPage
+  MainPage: {
+    path: "/",
+    Component: MainPage,
+  },
+  yupjscoockies: {
+    path: "/yupjscoockies",
+    Component: yup,
+  },
+  taghvim: {
+    path: "/todayIs",
+    Component: Callender,
+  },
+  dnd: {
+    path: "/dnd-kit",
+    Component: DragandDrop,
+  },
+
+  zustand: { 
+    path: "/zudtand",
+     Component: Bears 
     },
-    yupjscoockies: {
-        path : '/yupjscoockies',
-        Component:yup
-    },
-    taghvim : {
-        path : '/todayIs',
-        Component:Callender
-    },
-    dnd : {
-        path : '/dnd-kit',
-        Component:DragandDrop
+    zustand2 : {
+      path: "/zustand2",
+      Component: Todolist,
     }
-}
+};

@@ -21,21 +21,31 @@ export default function MainPage() {
       >
         yup$jscookies
       </Button>
-      <Button onClick={() => {
+      <Button
+        onClick={() => {
           navigate(routes.dnd.path);
-        }} size="medium" variant="contained">
+        }}
+        size="medium"
+        variant="contained"
+      >
         drag and drop
       </Button>
-      <Button size="medium" variant="contained" onClick={()=>{
-                  navigate(routes.zustand.path);
-
-      }}>
+      <Button
+        size="medium"
+        variant="contained"
+        onClick={() => {
+          navigate(routes.zustand.path);
+        }}
+      >
         zoostand mini project
       </Button>
-            <Button size="medium" variant="contained" onClick={()=>{
-                  navigate(routes.zustand2.path);
-
-      }}>
+      <Button
+        size="medium"
+        variant="contained"
+        onClick={() => {
+          navigate(routes.zustand2.path);
+        }}
+      >
         zoostand mini project2
       </Button>
       <Button
@@ -45,8 +55,22 @@ export default function MainPage() {
         size="medium"
         variant="contained"
       >
-        callender
+        calender
       </Button>
+      <Button
+        variant="contained"
+        size="medium"
+        onClick={() => {
+          navigate(routes.todolist.path);
+        }}
+      >todolist</Button>
+            <Button
+        variant="contained"
+        size="medium"
+        onClick={() => {
+          navigate(routes.todolist2.path);
+        }}
+      >todolist2</Button>
     </Stack>
   );
 }

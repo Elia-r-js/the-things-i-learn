@@ -4,6 +4,8 @@ import Callender from "../mini project/callender/Callender";
 import DragandDrop from "../mini project/dragand drop/dran-and-drop";
 import Bears from "../mini project/zoostand/Bears";
 import Todolist from "../mini project/zoostand/Todolist";
+import TodoList from "../mini project/todolist/todo-list";
+import TODOlist2 from "../mini project/TOdolist2/TODOlist";
 
 export const routes = {
   MainPage: {
@@ -23,12 +25,20 @@ export const routes = {
     Component: DragandDrop,
   },
 
-  zustand: { 
+  zustand: {
     path: "/zudtand",
-     Component: Bears 
-    },
-    zustand2 : {
-      path: "/zustand2",
-      Component: Todolist,
-    }
+    Component: Bears,
+  },
+  zustand2: {
+    path: "/zustand2",
+    Component: Todolist,
+  },
+  todolist : {
+    path: "/todolist",
+    Component : TodoList
+  },
+    todolist2 : {
+    path: "/todolist2",
+    Component : TODOlist2
+  }
 };
